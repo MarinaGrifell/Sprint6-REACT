@@ -1,9 +1,9 @@
 
 
 
- const Book =() => {
+ const Book =(mymessage) => {
 
-   return <h1>Viatge a la lluna</h1>
+   return <h1>{mymessage.message}</h1>
 
 }
 export default Book;
