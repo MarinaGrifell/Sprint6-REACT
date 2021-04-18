@@ -1,10 +1,20 @@
 import './App.css';
 import Book from './book.js'
+import llibres from './dades.json'
 
 function App() {
   return (
     <div className="App">
-      <Book message= 'Viatge a la lluna2'/>
+    {llibres.map((item)=> {
+      return (
+      
+         
+      
+         <Book title={item.title} author={item.author}></Book>
+      
+      )
+    })}
+     
     </div>
   );
 }
